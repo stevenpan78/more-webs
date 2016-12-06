@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Model View Interaction with Directives</title>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+    <style type="text/css">
+        #first{
+            background-color: red;
+        }
+        #second{
+            background-color: green;
+        }
+        h2{
+            text-align: center;
+            padding-top: 15px;
+            padding-bottom: -890px;
+        }
+    </style>
+</head>
+<body ng-app="angle">
+    <div ng-controller="myController1" id="first">
+    	<h2>{{name}}</h1>
+        <person-fav nick-name="Muscle Man" fav-color="red" fav-city="Albany" name="{{name}}"></person-fav>
+	</div>
+    <div ng-controller="myController2" id="second">
+        <h2>{{name}}</h1>
+        <person-fav nick-name="Average Man" fav-color="green" fav-city="Los Angeles" name="{{name}}"></person-fav>
+    </div>
+
+    
+    <script src="js/app.js"></script>
+    <script src="js/mainController.js"></script>
+</body>
+</html>
